@@ -47,7 +47,7 @@ const projects = [
     liveLink:
       "https://prakash07dz.github.io/Cool-Crush-3D-Fruit-juice-website-/",
     sourceCode:
-      "https://github.com/prakash07dz/Cool-Crush-3D-Fruit-juice-website-",
+      "https://prakash07dz.github.io/Cool-Crush-Fruit-juice-website-/",
   },
   {
     id: 6,
