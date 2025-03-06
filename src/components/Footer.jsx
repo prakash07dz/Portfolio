@@ -56,7 +56,7 @@ const Footer = () => {
           </p>
 
           <a
-            href="/path-to-resume.pdf"
+            href="/prakash_resume.pdf"
             download
             className="inline-block px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-400 transition-all"
           >

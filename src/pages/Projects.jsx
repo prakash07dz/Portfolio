@@ -8,7 +8,7 @@ const projects = [
     image: "/images/airbnb.png",
     description:
       "A fully functional Airbnb clone with booking, authentication, and payments.",
-    liveLink: "https://airbnb-clone-obo8.onrender.com/listings",
+    liveLink: "https://airbnb-clone-sam9.onrender.com",
     sourceCode: "https://github.com/prakash07dz/Airbnb-Clone",
   },
   {
@@ -31,6 +31,17 @@ const projects = [
   },
   {
     id: 4,
+    title:
+      "Solar Panel Installation System",
+    image: "/images/devineenergy.png",
+    description:
+      "Devine Energy is a full-stack web application designed to streamline the process of solar panel installations and government subsidy applications. ",
+    liveLink: "https://devineenergy.onrender.com/",
+    sourceCode:
+      "https://github.com/prakash07dz/Devine-Energy-Fullstack-Website",
+  },
+  {
+    id: 5,
     title: "Task Management Dashboard",
     image: "/images/task-management.png",
     description:
@@ -39,7 +50,7 @@ const projects = [
     sourceCode: "https://github.com/prakash07dz/Task-Management-Dashboard",
   },
   {
-    id: 5,
+    id: 6,
     title: "Animated Fruit Juice Website",
     image: "/images/cool-crush.png",
     description:
@@ -48,15 +59,6 @@ const projects = [
       "https://prakash07dz.github.io/Cool-Crush-3D-Fruit-juice-website-/",
     sourceCode:
       "https://prakash07dz.github.io/Cool-Crush-Fruit-juice-website-/",
-  },
-  {
-    id: 6,
-    title: "Professional Business Website",
-    image: "/images/business-website.png",
-    description:
-      "A sleek and responsive business website featuring essential sections and showcases your company's expertise.",
-    liveLink: "https://prakash07dz.github.io/Business-Website-Landing-Page/",
-    sourceCode: "https://github.com/prakash07dz/Business-Website-Landing-Page",
   },
 ];
 

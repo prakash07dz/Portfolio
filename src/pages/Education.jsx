@@ -4,17 +4,17 @@ const educationData = [
   {
     title: "10th Standard",
     year: "March 2019",
-    percentage: "75.05%",
+    percentage: "75.5%",
   },
   {
     title: "12th Standard",
     year: "May 2021",
-    percentage: "72.05%",
+    percentage: "72.5%",
   },
   {
     title: "BCA - Gokul Global University",
     year: "Currently in 6th Sem",
-    percentage: "5th Sem: 90.05%",
+    percentage: "5th Sem: 90.5%",
   },
 ];
 

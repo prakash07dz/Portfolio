@@ -5,7 +5,6 @@ import {
   FaGithub,
   FaLinkedin,
   FaInstagram,
-  FaTwitter,
   FaBriefcase,
   FaDownload,
 } from "react-icons/fa";
@@ -61,7 +60,12 @@ const Home = () => {
           responsive web applications.
         </p>
         <div className="flex space-x-6 mt-6">
-          {["https://github.com/prakash07dz", "https://www.linkedin.com/in/prakashparmar1503/", "https://instagram.com/prakashthakor.101", "https://twitter.com/prakash07dz"].map((link, index) => (
+          {[
+            "https://github.com/prakash07dz",
+            "https://www.linkedin.com/in/prakashparmar1503/",
+            "https://instagram.com/prakashthakor.101",
+            "https://twitter.com/prakash07dz",
+          ].map((link, index) => (
             <a
               key={index}
               href={link}
@@ -69,10 +73,27 @@ const Home = () => {
               rel="noopener noreferrer"
               ref={(el) => (iconsRef.current[index] = el)}
             >
-              {index === 0 ? <FaGithub size={30} className="hover:text-blue-400 transition-all" /> : 
-               index === 1 ? <FaLinkedin size={30} className="hover:text-blue-400 transition-all" /> : 
-               index === 2 ? <FaInstagram size={30} className="hover:text-blue-400 transition-all" /> : 
-               <FaXTwitter size={30} className="hover:text-blue-400 transition-all" />}
+              {index === 0 ? (
+                <FaGithub
+                  size={30}
+                  className="hover:text-blue-400 transition-all"
+                />
+              ) : index === 1 ? (
+                <FaLinkedin
+                  size={30}
+                  className="hover:text-blue-400 transition-all"
+                />
+              ) : index === 2 ? (
+                <FaInstagram
+                  size={30}
+                  className="hover:text-blue-400 transition-all"
+                />
+              ) : (
+                <FaXTwitter
+                  size={30}
+                  className="hover:text-blue-400 transition-all"
+                />
+              )}
             </a>
           ))}
         </div>
@@ -85,7 +106,7 @@ const Home = () => {
             View My Work
           </a>
           <a
-            href="/path-to-resume.pdf"
+            href="/prakash_resume.pdf"
             download
             className="inline-flex items-center px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-400 transition-all"
           >
