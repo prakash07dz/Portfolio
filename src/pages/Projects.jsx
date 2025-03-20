@@ -55,8 +55,7 @@ const projects = [
     image: "/images/cool-crush.png",
     description:
       "A vibrant and animated e-commerce website showcasing fruit juices. Features engaging UI animations for an interactive and delightful user experience.",
-    liveLink:
-      "https://prakash07dz.github.io/Cool-Crush-3D-Fruit-juice-website-/",
+    liveLink: "https://prakash07dz.github.io/Cool-Crush-Fruit-juice-website-/",
     sourceCode:
       "https://prakash07dz.github.io/Cool-Crush-Fruit-juice-website-/",
   },
