@@ -7,6 +7,7 @@ import {
   FaReact,
   FaDatabase,
   FaFigma,
+  FaAws,
   FaGitAlt,
   FaGithub,
 } from "react-icons/fa";
@@ -15,6 +16,15 @@ import {
   SiMongodb,
   SiTailwindcss,
   SiBootstrap,
+  SiJest,
+  SiCypress,
+  SiRender,
+  SiNetlify,
+  SiRedux,
+  SiPostman,
+  SiDocker,
+  SiGithubactions,
+  SiCloudinary,
 } from "react-icons/si";
 
 const skillsData = {
@@ -24,51 +34,104 @@ const skillsData = {
     {
       name: "JavaScript",
       icon: <FaJs className="text-yellow-500" />,
-      level: 75,
+      level: 70,
     },
     {
       name: "Node.js",
       icon: <FaNodeJs className="text-green-500" />,
-      level: 70,
+      level: 65,
     },
-    { name: "SQL", icon: <FaDatabase className="text-blue-400" />, level: 65 },
+    { name: "SQL", icon: <FaDatabase className="text-blue-400" />, level: 60 },
     {
       name: "MongoDB",
       icon: <SiMongodb className="text-green-400" />,
-      level: 70,
+      level: 65,
     },
   ],
   Frameworks: [
     {
       name: "Express.js",
       icon: <SiExpress className="text-gray-500" />,
-      level: 70,
+      level: 60,
     },
     {
       name: "React.js",
       icon: <FaReact className="text-blue-400" />,
-      level: 80,
+      level: 70,
     },
     {
       name: "Tailwind CSS",
       icon: <SiTailwindcss className="text-cyan-400" />,
-      level: 75,
+      level: 70,
     },
     {
       name: "Bootstrap",
       icon: <SiBootstrap className="text-purple-500" />,
-      level: 75,
+      level: 65,
     },
   ],
   Tools: [
-    { name: "Figma", icon: <FaFigma className="text-pink-500" />, level: 50 },
-    { name: "Git", icon: <FaGitAlt className="text-orange-500" />, level: 80 },
+    { name: "Figma", icon: <FaFigma className="text-pink-500" />, level: 40 },
+    { name: "Jest", icon: <SiJest className="text-red-500" />, level: 40 },
+    {
+      name: "Cypress",
+      icon: <SiCypress className="text-green-500" />,
+      level: 45,
+    },
+    {
+      name: "Postman",
+      icon: <SiPostman className="text-orange-500" />,
+      level: 75,
+    },
+    { name: "Docker", icon: <SiDocker className="text-blue-500" />, level: 50 },
+    {
+      name: "Cloudinary",
+      icon: <SiCloudinary className="text-yellow-500" />,
+      level: 55,
+    },
+  ],
+  Deployment: [
+    { name: "Render", icon: <SiRender className="text-blue-500" />, level: 80 },
+    {
+      name: "Netlify",
+      icon: <SiNetlify className="text-teal-500" />,
+      level: 75,
+    },
+    {
+      name: "AWS",
+      icon: <FaAws className="text-orange-500" />,
+      level: 50,
+    },
+  ],
+  "Version Control": [
+    { name: "Git", icon: <FaGitAlt className="text-orange-500" />, level: 70 },
     { name: "GitHub", icon: <FaGithub className="text-white" />, level: 85 },
+    {
+      name: "GitHub Actions",
+      icon: <SiGithubactions className="text-purple-500" />,
+      level: 60,
+    },
+  ],
+  "State Management": [
+    { name: "Redux", icon: <SiRedux className="text-purple-500" />, level: 65 },
+    {
+      name: "Context API",
+      icon: <FaReact className="text-blue-400" />,
+      level: 60,
+    },
+  ],
+  Authentication: [
+    { name: "JWT", icon: <FaDatabase className="text-blue-400" />, level: 65 },
+    {
+      name: "bcrypt.js",
+      icon: <FaDatabase className="text-green-400" />,
+      level: 60,
+    },
   ],
   Spoken_Languages: [
-    { name: "English", level: 75 },
-    { name: "Hindi", level: 95 },
-    { name: "Gujrati", level: 100 }
+    { name: "English", level: 65 },
+    { name: "Hindi", level: 85 },
+    { name: "Gujrati", level: 95 },
   ],
 };
 
@@ -96,7 +159,7 @@ const Skills = () => {
         {Object.entries(skillsData).map(([category, skills], index) => (
           <div key={index} className="mb-10">
             <h3 className="text-2xl font-semibold text-blue-400 mb-4">
-              {category}
+              {category.replace("_", " ")}
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               {skills.map((skill, i) => (

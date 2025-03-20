@@ -1,60 +1,60 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const projects = [
   {
     id: 1,
-    title: "Airbnb Clone",
+    title: "A Vacation Rental Platform",
     image: "/images/airbnb.png",
     description:
-      "A fully functional Airbnb clone with booking, authentication, and payments.",
+      "A full-stack web application that enables users to explore, book, and manage vacation rentals. Features include advanced search, detailed listing views, and secure booking management.",
     liveLink: "https://airbnb-clone-sam9.onrender.com",
     sourceCode: "https://github.com/prakash07dz/Airbnb-Clone",
   },
   {
     id: 2,
-    title: "GitHub Clone",
+    title: "A Version Control and Repository Management Platform",
     image: "/images/github.png",
     description:
-      "A GitHub-like platform with repository management and version control features.",
+      "A GitHub-inspired platform with core features like init, add, commit, push, and pull. Integrated with Google Drive API for secure file storage.",
     liveLink: "https://githubclone-soob.onrender.com/",
     sourceCode: "https://github.com/prakash07dz/Github-Clone",
   },
   {
     id: 3,
-    title: "Zoom Clone",
+    title: "A Real-Time Video Conferencing App",
     image: "/images/zoom.png",
     description:
-      "A video conferencing app similar to Zoom with real-time chat and screen sharing.",
+      "A real-time communication platform supporting video calls, screen sharing, and chat functionality. Integrated with WebRTC and Socket.io for seamless connectivity.",
     liveLink: "https://zoom-clone-frontend-0ztm.onrender.com",
     sourceCode: "https://github.com/prakash07dz/Zoom-Clone",
   },
   {
     id: 4,
-    title:
-      "Solar Panel Installation System",
-    image: "/images/devineenergy.png",
+    title: " A Stock Trading and Portfolio Management System",
+    image: "/images/zerodha.png",
     description:
-      "Devine Energy is a full-stack web application designed to streamline the process of solar panel installations and government subsidy applications. ",
-    liveLink: "https://devineenergy.onrender.com/",
-    sourceCode:
-      "https://github.com/prakash07dz/Devine-Energy-Fullstack-Website",
+      "A feature-rich trading platform that offers portfolio tracking, real-time charts, and order management. Built with responsive UI and tested using Jest and Cypress for reliability.",
+    liveLink: "https://zerodha-clone-frontend-d2dl.onrender.com",
+    sourceCode: "https://github.com/prakash07dz/Zerodha-Clone",
   },
   {
     id: 5,
-    title: "Task Management Dashboard",
-    image: "/images/task-management.png",
+    title: "A Smart Solar Panel Management System",
+    image: "/images/devineenergy.png",
     description:
-      "Task management dashboard with drag-and-drop functionality for organizing tasks efficiently.",
-    liveLink: "https://prakash07dz.github.io/Task-Management-Dashboard/",
-    sourceCode: "https://github.com/prakash07dz/Task-Management-Dashboard",
+      "A comprehensive web solution for solar panel installations, subsidy applications, and customer management. Includes an admin panel for monitoring applications and updating website content.",
+    liveLink: "https://devineenergy.onrender.com/",
+    sourceCode:
+      "https://github.com/prakash07dz/Devine-Energy-Fullstack-Website",
   },
   {
     id: 6,
     title: "Animated Fruit Juice Website",
     image: "/images/cool-crush.png",
     description:
-      "Cool Crush is a vibrant and engaging fruit juice website featuring stunning animations that bring freshness to life.",
+      "A vibrant and animated e-commerce website showcasing fruit juices. Features engaging UI animations for an interactive and delightful user experience.",
     liveLink:
       "https://prakash07dz.github.io/Cool-Crush-3D-Fruit-juice-website-/",
     sourceCode:
@@ -74,7 +74,7 @@ const Projects = () => {
         <p className="text-lg mt-2 text-gray-400">Some of my recent work</p>
       </div>
 
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.slice(0, showMore ? projects.length : 3).map((project) => (
             <motion.div
@@ -101,7 +101,7 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-400 transition-all"
                 >
-                  Try it Live
+                  Live Demo
                 </a>
                 <a
                   href={project.sourceCode}
@@ -109,7 +109,7 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   className="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-all"
                 >
-                  View Code
+                  Source Code
                 </a>
               </div>
             </motion.div>
